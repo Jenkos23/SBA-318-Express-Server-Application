@@ -29,11 +29,12 @@ router
 
     //Validation
 
-    if (!name || !username || !email){
-        const error = new Error ('Name, username, and email are required.');
+    if (!name || !username || !email|| !phone|| !website || !company){
+        const error = new Error ('Name, username, email, phone, website, and company are required.');
         error.status = 400;
         next(error);
     }
+   
 
     //Create a new user post
     const newUser = {
@@ -50,6 +51,34 @@ router
     users.push(newUser);
     res.status(error).json(newUser)
 })
+
+//For update method
+.patch((req, res,next) => {
+    const user = users.find((u, i) =>{
+        if (u.id == req.params.id){
+            for (const key in req.body){
+                users[i][key] = req.body[key];
+            }
+            return true;
+        }
+    });
+    if(user) res.json(user)
+        else next();
+
+})
+
+//Delete method
+.delete((req, res, next) =>{
+    const user = users.find((u, i) => {
+        if (u.id == req.params.id){
+            users.splice(i, 1);
+            return true;
+        }
+    });
+
+    if(user) res.json(user)
+        else next();
+});
 
 
 
