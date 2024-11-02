@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Salvation Love Story
+  // Success alert
+  .alert.alert-success
+    strong Success! 
+    | Welcome to my Express-server Pug-powered app! This is a story of my Salvation-love encounter.
+  each message in messages
+   p.text-success= message
