@@ -3,6 +3,23 @@
 
 
 const posts =  [
+
+    {
+        "id": 18,
+        "title": "divine love",
+        "body": "His loving is divine, unfailing and perfect in all circumstances.",
+        "tags": [
+          "Divine",
+          "classic",
+          "love"
+        ],
+        "reactions": {
+          "likes": 79980,
+          "dislikes": 4
+        },
+        "views": 5000,
+        "userId": null
+      },
       {
         "id": 7,
         "title": "This is important to remember.",
