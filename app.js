@@ -48,6 +48,7 @@ app.use(customHeader);
 //Use Routes
 app.use("/api/users", users);
 app.use("/messages", messages);
+app.use("/api/posts", posts);
 
 
 
