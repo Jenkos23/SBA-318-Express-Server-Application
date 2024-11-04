@@ -5,7 +5,7 @@ This is an Express server application structured with several directories for be
 
 # Directory Overview
 
-# Data: Contains the following files:
+Data: Contains the following files:
 comment.js
 post.js
 users.js
