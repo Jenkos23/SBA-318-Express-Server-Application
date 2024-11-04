@@ -28,4 +28,4 @@ Utilities: Contains error handling middleware for managing application errors ef
 # Main File
 app.js: The main entry point for the application, where routes are defined and linked to the Express app.
 
-These directories are structured to improve code organization and readability while enhancing overall performance.
+These directories are structured to improve code organization, Adhere to the guiding principles of REST. and readability while enhancing overall performance.
