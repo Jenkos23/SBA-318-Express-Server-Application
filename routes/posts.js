@@ -72,7 +72,7 @@ router
 
    // filter posts by title 
 router
- .route("/posts/filter")
+ .route("/filter")
  .get((req, res) => {
 
     const {title} = req.query;

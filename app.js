@@ -10,6 +10,7 @@ const users = require("./routes/users");
 const posts = require("./routes/posts");
 const comments = require("./routes/comments");
 const messages = require("./routes/messages");
+const form = require("./routes/form");
 
 
 const error = require("./utilities/error"); //Import error handling midware utilities
@@ -50,6 +51,7 @@ app.use("/api/users", users);
 app.use("/messages", messages);
 app.use("/api/posts", posts);
 app.use("/api/comments", comments);
+app.use("/api/form", form);
 
 
 
