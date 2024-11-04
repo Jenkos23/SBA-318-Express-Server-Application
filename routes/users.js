@@ -4,12 +4,16 @@ const router = express.Router();
 const users = require("../data/users");
 const error = require("../utilities/error");
 
+
+
+
 //Get route to retrieve all users
 router
   .route("/")
   .get( (req, res) => {
     res.json(users);
 });
+
 
 //Get user by user by ID
 router
@@ -21,6 +25,7 @@ router
         res.json(user);
     }else next(error(400, "User not found"));
 })
+
 
 
 //Post route creating a new user
@@ -79,6 +84,7 @@ router
     if(user) res.json(user)
         else next();
 });
+
 
 
 
