@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title User Form
+    link(rel="stylesheet", href="/style.css") 
+  body
+    h2 Create a New User
+    form(action="/api/form/user", method="POST") 
+      label(for="username") Username:
+      input(type="text", name="username", required)
+      br
+      label(for="email") Email:
+      input(type="email", name="email", required)
+      br
+      button(type="submit") Submit
