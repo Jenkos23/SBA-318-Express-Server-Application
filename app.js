@@ -8,7 +8,7 @@ const path = require("path"); //handle file path
 //Import routes
 const users = require("./routes/users");
 const posts = require("./routes/posts");
-const comments = require("./routes/comment");
+const comments = require("./routes/comments");
 const messages = require("./routes/messages");
 
 
@@ -49,6 +49,7 @@ app.use(customHeader);
 app.use("/api/users", users);
 app.use("/messages", messages);
 app.use("/api/posts", posts);
+app.use("/api/comments", comments);
 
 
 
